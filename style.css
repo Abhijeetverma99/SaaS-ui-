@@ -56,6 +56,11 @@ nav li {
     justify-content: space-between;
 }
 
+.nav-links li:hover{
+    border-top: 4px solid red;
+    padding: 20px 0;
+    cursor: pointer;
+}
 .nav-links span {
     display: flex;
     justify-content: space-between;
@@ -278,12 +283,13 @@ nav h4 {
 
 .SaaS-third-span div {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+
 }
 
 .SaaS-third-span h6 {
     margin-left: 8px;
-    background-color: #39a5f4;
+    background-color: #389de481;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,4 +350,67 @@ nav h4 {
     border-top: 1px solid rgba(128, 128, 128, 0.591);
     border-radius: 0 0 2px 2px ;
     background-color: #f9fbfd;
+}
+
+
+@media(max-width:768px){
+    .Hero-section{
+        padding: 0;
+    }
+    .Hero-section-main-first{
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    .Hero-section-main{
+        padding: 0;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    nav{
+        padding: 10px;
+    }
+
+    .nav-links li{
+        display: none;
+    }
+    .nav-links-2 {
+        width: 300px;
+    }
+
+    .price-off{
+        margin: 10px;
+
+    }
+
+    .SaaS-fourth-span{
+        background-color: rgba(35, 124, 202, 0.301);
+    }
+    .SaaS-card-sec{
+        padding: 0;
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .SaaS-card-product{
+        margin: 10px 0;
+    }
+    .hero-second-section{
+        width: 100%;
+    }
+
+    .second-sec-div{
+        width: 100%;
+    }
+
+    .second-sec-div ul{
+        width: 200px;
+        font-size: 14px;
+    }
+    .second-sec-div p{
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
